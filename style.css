@@ -48,6 +48,11 @@
   width: 100%;
 }
 
+.btn:active {
+  background-color: #0096C7;
+  transform: scale(1.025);
+}
+
 .goto {
   border-radius: 10px;
   border: 1px solid #0096C7;
@@ -62,4 +67,15 @@
   text-decoration: none;
   transition: all 0.2s ease-in-out;
   width: 50%;
+}
+
+.goto:hover {
+  background-color: #0096C7;
+  color: #fff;
+}
+
+.goto:active {
+  background-color: #023E8A;
+  color: #fff;
+  transform: scale(1.025);
 }
