@@ -15,7 +15,7 @@ const button = ({ id, label }) => `
 `
 
 const iframe = (link) => `
-  <iframe style="display:block;" src="${link}" id="frame"></iframe>
+  <iframe style="display:none;" src="${link}" id="frame"></iframe>
 `
 $APP.innerHTML = `
   ${input({ id: 'key', label: 'Key', placeholder: 'key', value:'test' })}
