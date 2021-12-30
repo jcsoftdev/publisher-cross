@@ -11,17 +11,18 @@ const input = ({ type, value, id, placeholder }) => `
   </div>
 `
 const button = ({ id, label }) => `
-  <button id="${id}">${label}</button>
+  <button class='btn' id="${id}">${label}</button>
 `
 
 const iframe = (link) => `
   <iframe style="display:none;" src="${link}" id="frame"></iframe>
 `
 $APP.innerHTML = `
-  ${input({ id: 'key', label: 'Key', placeholder: 'key', value:'test' })}
-  ${input({ id: 'value', label: 'Value', placeholder: 'value', value:'test' })}
+  ${input({ id: 'key', label: 'Key', placeholder: 'key', value:'' })}
+  ${input({ id: 'value', label: 'Value', placeholder: 'value', value:'' })}
   ${button({ id: 'btn', label: 'Send' })}
   ${iframe(URL_TO_SEND)}
+  <a class='goto' href="${URL_TO_SEND}" target="_blank">Go to receiver</a>
 `
 
 // aqui viene la Magia
